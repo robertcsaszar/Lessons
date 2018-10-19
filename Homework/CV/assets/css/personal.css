@@ -1,0 +1,57 @@
+/* ####### Personal, Resume, Portfolio height ####### */
+/* ################################################## */
+
+#personal-container,
+#resume-container,
+#portfolio-container {
+  height: auto;
+  padding: 3%;
+  background-color: #e6e6e6;
+}
+
+/* ####### Personal ####### */
+/* ######################## */
+
+.logo {
+  font-size: 50px;
+  color: #1abc9c;
+  text-align: center;
+  text-shadow: 1px 1px black;
+}
+
+h5 {
+  font-size: 20px;
+  margin: 10px;
+}
+
+section>h2 {
+  font-size: 40px;
+  color: #3a3a3a;
+  font-weight: 900;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+#personal-item {
+  color: #1abc9c;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 2.2em;
+}
+
+a .fa {
+  font-size: 20px;
+  margin-left: 40px;
+  color: #1abc9c;
+}
+
+#hobbies,
+#address,
+#profile,
+.responsibilities{
+  list-style-type: circle;
+}
+
+.responsibilities {
+  margin-left: 20px;
+}

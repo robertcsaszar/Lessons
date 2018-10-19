@@ -1,0 +1,40 @@
+body {
+  background-image: url("https://hdwallsource.com/img/2014/9/blur-26347-27038-hd-wallpapers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  color: white;
+  height: 100%;
+  font-height: bolder;
+  font-size: 20px;
+}
+
+hr {
+  background-color: white;
+}
+
+/* Weather Modal */
+
+#weather {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 5px 10px 5px black;
+}
+
+#currentTime {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.days {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+#temp {
+  font-size: 50px;
+}
+

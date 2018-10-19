@@ -1,0 +1,9 @@
+@media (min-width: 800px) {
+  img {
+    width: 50%;
+    height: auto;
+  }
+  p {
+    float: left
+  }
+}

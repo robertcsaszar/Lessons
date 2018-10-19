@@ -1,0 +1,42 @@
+/* ####### Background ####### */
+/* ####################### */
+
+#top-container {
+  background-image: url(../images/background/background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+#background2 {
+  background-image: url(../images/background/background2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-attachment: fixed;
+  padding: 50px;
+}
+
+#background3 {
+  background-image: url(../images/background/background3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 5%;
+  background-attachment: fixed;
+}
+
+#background4 {
+  background-image: url(../images/background/background4.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  background-attachment: fixed;
+}

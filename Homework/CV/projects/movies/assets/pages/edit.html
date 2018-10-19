@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Edit Movie</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.2/mustache.js"
+
+  integrity="sha256-Kk9BaeWdEcyo4ksPRHhPgDyedyTwwPCbczgcIoCTvls=" crossorigin="anonymous"></script>
+
+  </script>
+  <script src="../js/edit.js"></script>
+  <link rel="stylesheet" href="../css/edit.css">
+
+
+</head>
+
+<body>
+  <h1>Edit movie</h1>
+  <h2>Movie name</h2>
+  <ul id="movies">
+    <template id="movie-template">
+        <li data-id='{{_id}}'>
+          <div class="mov">
+
+
+<div class="img"><img src="{{Poster}}"></div>
+<div class="content">
+
+
+          <p><strong>Title: </strong>
+            <span class="noedit title">{{Title}}</span>
+            <input class="edit title">
+          </p>
+          <p><strong>Year: </strong>
+            <span class="noedit year">{{Year}}</span>
+            <input class="edit year">
+          </p>
+          <p><strong>Genre: </strong>
+            <span class="noedit genre">{{Genre}}</span>
+            <input class="edit genre">
+          </p>
+        </div>
+      </div>
+          <button data-id='{{_id}}' class='remove'>Remove</button>
+          <button class="editMovie noedit">Edit</button>
+          <button class="saveEdit edit">Save</button>
+          <button class="cancelEdit edit">Cancel</button>
+        </li>
+      </template>
+  </ul>
+</body>
+
+</html>

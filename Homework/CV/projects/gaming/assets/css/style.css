@@ -1,0 +1,253 @@
+/* General */
+body {
+  /* height: 100%;
+  width: auto; */
+  /* background-color: #222222; */
+  background-image: url("http://getwallpapers.com/wallpaper/full/c/c/7/571088.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+/* Text Colors */
+
+.title {
+  color: #8fc42a;
+}
+
+h3 {
+  color: white;
+}
+
+/* Navigation Bar */
+
+header
+  div:first-child
+  > div:first-child
+  > nav
+  > div
+  > ul:first-child
+  > li
+  > a:hover {
+  color: white;
+}
+
+header div:first-child > div:first-child {
+  background-color: #232323;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* login & Register */
+header div:first-child > div:first-child > nav > div > ul:last-child > li > a {
+  color: white;
+}
+
+header
+  div:first-child
+  > div:first-child
+  > nav
+  > div
+  > ul:last-child
+  > li
+  > a:hover {
+  color: #8fc42a;
+}
+
+/* Banner */
+
+.h_banner {
+  background-image: url("http://student.ulb.ac.be/~gtionogu/images/me1.png");
+  background-position: center;
+  background-size: 100%;
+  display: block;
+  width: 466px;
+  float: right;
+  height: 88px;
+  border: 2px solid white;
+  text-align: center;
+  font-size: 17px;
+  color: #555557;
+  margin-top: 18px;
+}
+
+@media (max-width: 767px) {
+  .h_banner {
+    display: none;
+  }
+}
+
+/* Second Navigation Bar */
+
+header div:nth-child(3) > div:first-child {
+  color: white;
+  background-color: #84c200;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+header div:nth-child(3) > div:first-child > nav > a {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+header div:nth-child(3) > div:first-child > nav > a:hover {
+  color: black;
+}
+
+h1 {
+  display: inline;
+  float: left;
+  width: auto;
+  color: white;
+  margin-top: 35px;
+  margin-left: 20px;
+  font-weight: 1000;
+  font-size: 35px;
+}
+
+@media (max-width: 767px) {
+  header div:nth-child(3) > div:first-child > nav > a {
+    display: none;
+  }
+}
+
+h1::first-letter {
+  color: #8fc42a;
+}
+
+#banner {
+  background-color: #343436;
+  height: 130px;
+}
+
+/* Search bar */
+form button.btn {
+  background-color: #3c4231;
+  color: white;
+}
+
+/* Carousel - Slideshow */
+
+.carousel-inner {
+  border-radius: 8px;
+  height: 300px;
+}
+
+@media (max-width: 767px) {
+  .carousel-inner {
+    border-radius: 8px;
+    height: auto;
+  }
+}
+
+div.carousel-inner img {
+  background-position: center;
+}
+
+/* Right Content */
+
+div#content p {
+  color: grey;
+}
+div#content button {
+  background-color: #89c800;
+  color: white;
+}
+
+div#content button:hover {
+  background-color: green;
+}
+
+/* Second Content Latest Topics */
+
+.topic {
+  background-color: #313133;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.topic h5 {
+  color: white;
+}
+
+div div.content {
+  background-color: #2a2a2a;
+  display: inline-block;
+  float: none;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+div > div > article > div:nth-child(2),
+div > div > article > div:nth-child(3) {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+div div h4 {
+  color: white;
+}
+
+div div p {
+  color: grey;
+}
+
+/* Right Latest Reviews, Latest Videos*/
+#second-content2 {
+  width: 100%;
+  margin-left: -28px;
+}
+
+div div img2 {
+  float: left;
+  width: 170px;
+  height: 170px;
+  margin-right: 15px;
+}
+
+.right-images {
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-right: 15px;
+}
+
+hr {
+  border-color: darkgray;
+}
+
+.see-all:hover {
+  text-decoration: none;
+  color: white;
+}
+/* Bottom Content */
+
+.paragraph {
+  color: white;
+}
+
+.read-more:hover {
+  text-decoration: none;
+  color: #8fc42a;
+}
+
+/* Footer */
+
+@media (max-width: 767px) {
+  footer nav > ul:last-child li {
+    display: none;
+  }
+}
+
+footer div:first-child > div:first-child > nav > ul:first-child > li > a:hover {
+  color: white;
+}

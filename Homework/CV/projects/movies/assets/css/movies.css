@@ -1,0 +1,14 @@
+/* Movies Container */
+#movies {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card {
+  height: 100%;
+  width: auto;
+}
+
+.test {
+  border-right: 2px solid #d9d9d9;
+}

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Robert Daniel Csaszar</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Reset -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <!-- Bootstrap V4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- Awesome Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- jQuery-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <!-- Bootstrap v4 Scrip -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="assets/css/general.css">
+  <link rel="stylesheet" href="assets/css/background.css">
+  <link rel="stylesheet" href="assets/css/navigation.css">
+  <link rel="stylesheet" href="assets/css/me.css">
+  <link rel="stylesheet" href="assets/css/personal.css">
+  <link rel="stylesheet" href="assets/css/resume.css">
+  <link rel="stylesheet" href="assets/css/skills.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- Custom Scripts -->
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/projectsView.js"></script>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/fav.ico" type="image/x-icon">
+  <link rel="icon" href="assets/images/logo/fav.ico" type="image/x-icon">
+</head>
+
+<body data-spy="scroll" data-target="#navbarText" data-offset="40" onload="project()">
+  <!-- Mavigation Bar -->
+  <div id="top-container" class="container-fluid">
+    <header>
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+            <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a href="#top-container" class="nav-link" onclick="homeFunction()">HOME</a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                  <a href="#personal-container" class="nav-link" onclick="aboutFunction()">ABOUT</a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                  <a href="#background2" class="nav-link" onclick="skillsFunction()">LEARNING</a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                  <a href="#resume-container" class="nav-link" onclick="careerFunction()">CAREER</a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                  <a href="#portfolio-container" class="nav-link" onclick="portfolioFunction()">PORTFOLIO</a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                  <a href="#background4" class="nav-link" onclick="contactFunction()">CONTACT</a>
+                </li>
+                <hr>
+              </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item social">
+                  <a href="https://www.facebook.com/robert.daniel.c92" target="_blank"><i class="fa fa-facebook nav-icons"></i></a>
+                  <a href="https://www.linkedin.com/in/csaszar-robert-daniel-12a37a144/" target="_blank"><i class="fa fa-linkedin nav-icons"></i></a>
+                  <a href="skype:robert.daniel.c92@gmail.com?add"><i class="fa fa-skype nav-icons"></i></a>
+                  <a href="mailto:robertdaniel.csaszar@yahoo.com"><i class="fa fa-yahoo nav-icons"></i></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="container-fluid top-item">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+<!--                 <img src="assets/images/logo/logo.png" alt="profile-placeholder" id="logo" class="img-fluid"> -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <img src="assets/images/logo/Robert.png" alt="profile-placeholder" id="fname" class="img-fluid">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <img src="assets/images/logo/csaszar.png" alt="profile-placeholder" id="lname" class="img-fluid">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <img src="assets/images/logo/me.png" alt="profile-placeholder" id="me" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div id="personal-container" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <section>
+          <div class="text-center">
+            <h2 class="notAnimated animateBlock right">Personal Details</h2>
+            <p id="personal-item" class="w3-animate-right"><em>"You learn more from failure than from success. Don’t let it stop you. Failure builds character."</em></p>
+            <p class="notAnimated animateBlock left">QA Tester with full bugs lifecycle experience, including designing, developing and implementing test cases and test plans. Tech-savvy team player accustomed to working in complex project-based environments. Key member of the QA team regarded
+              as one of the "go-to" member on challenging test cases. Performing system, unit, performance, load, regression, stress, compatibility tests on a daily basis. Documenting bugs and handling the bugs lifecycle using an internal bug tracking
+              system. Delivering QA testing reports that determine the quality of the product and the progress achieved each day.</p>
+            <br>
+          </div>
+          <div class="row">
+            <div class="col-md-4 notAnimated animateBlock left">
+              <div class="text-center">
+                <span class="fa fa-star logo"></span>
+                <h5>Profile</h5>
+              </div>
+              <ul id="profile">
+                <li>Software QA Tester at Avenu</li>
+                <li>Born: 13 May 1992</li>
+              </ul>
+            </div>
+            <div class="col-md-4 notAnimated animateBlock top">
+              <div class="text-center">
+                <span class="fa fa-paper-plane logo"></span>
+                <h5>Address</h5>
+              </div>
+              <ul id="address">
+                <li>Country: Romania</li>
+                <li>County: Hunedoara</li>
+                <li>Town: Petrosani</li>
+              </ul>
+            </div>
+            <div class="col-md-4 notAnimated animateBlock right">
+              <div class="text-center">
+                <span class="fa fa-flag logo"></span>
+                <h5>Hobbies & interests</h5>
+              </div>
+              <ul id="hobbies">
+                <li>First of all I like to travel especially with friends. Doing crazy stuffs and enjoy the trip</li>
+                <li>God I love video games. One of the best thing invented on earth after beer of course not sure which one of these was first but who cares</li>
+                <li>I like to swim. Swiming is very relaxing and it is a big yes for your body if you do it regularly, not like me twice per month</li>
+                <li>I am not sure if this is a hobby or not but god I like to sleep a lot</li>
+                <li>I like to drive</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div id="background2" class="container-fluid text-center">
+    <section id="skills-container">
+      <h2 class="skills-title">LEARNING</h2>
+      <br>
+      <div class="row">
+        <div class="col-sm 12 col-md-6">
+          <div class="skills_wrapper notAnimated animateBlock left">
+            <div class="skills-item" data-level="50" data-base-color="#ffe89c" data-skill-color="#35a49d">
+              <div class="inner_wrap">
+                <div class="desc">
+                  <h5>
+                    <a href="" title="html5">html5</a>
+                  </h5>
+                </div>
+                <div class="diagram">
+                  <span>
+                    <em></em>
+                  </span>
+                </div>
+                <div class="level">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills-item show_state" data-level="50" data-base-color="#ffe89c" data-skill-color="#35a49d">
+              <div class="inner_wrap">
+                <div class="desc">
+                  <h5>
+                    <a href="" title="CSS3">CSS3</a>
+                  </h5>
+                </div>
+                <div class="diagram">
+                  <span>
+                    <em></em>
+                  </span>
+                </div>
+                <div class="level">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills-item show_state" data-level="20" data-base-color="#ffe89c" data-skill-color="#35a49d">
+              <div class="inner_wrap">
+                <div class="desc">
+                  <h5>
+                    <a href="" title="JavaScript">javascript</a>
+                  </h5>
+                </div>
+                <div class="diagram">
+                  <span>
+                    <em></em>
+                  </span>
+                </div>
+                <div class="level">
+                  <span>20%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="skills_wrapper notAnimated animateBlock right">
+            <div class="skills-item show_state" data-level="5" data-base-color="#ffe89c" data-skill-color="#35a49d">
+              <div class="inner_wrap">
+                <div class="desc">
+                  <h5>
+                    <a href="" title="ReactJS">ReactJS</a>
+                  </h5>
+                </div>
+                <div class="diagram">
+                  <span>
+                    <em></em>
+                  </span>
+                </div>
+                <div class="level">
+                  <span>5%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills-item show_state" data-level="20" data-base-color="#ffe89c" data-skill-color="#35a49d">
+              <div class="inner_wrap">
+                <div class="desc">
+                  <h5>
+                    <a href="" title="jQuery">jQuery</a>
+                  </h5>
+                </div>
+                <div class="diagram">
+                  <span>
+                    <em></em>
+                  </span>
+                </div>
+                <div class="level">
+                  <span>20%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills-item show_state" data-level="50" data-base-color="#ffe89c" data-skill-color="#35a49d">
+              <div class="inner_wrap">
+                <div class="desc">
+                  <h5>
+                    <a href="" title="Bootstrap">bootstrap</a>
+                  </h5>
+                </div>
+                <div class="diagram">
+                  <span>
+                    <em></em>
+                  </span>
+                </div>
+                <div class="level">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <div id="resume-container" class="container-fluid">
+    <h2 class="text-center mb-4">MY CAREER</h2>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 resume-vr-right">
+        <h3 class="mt-4 mb-4 notAnimated animateBlock left">Education</h3>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <img class="resume-icons notAnimated animateBlock left" src="http://talpos.ro/wp-content/uploads/2018/02/logo_color_bg_transparent.png" class="img-fluid" width="250px" alt="">
+          </div>
+          <div class="col-sm-12 col-md-6 m-3">
+            <h4 class="notAnimated animateBlock left">Front-end Developer</h4>
+          </div>
+        </div>
+        <br>
+        <p class="notAnimated animateBlock left"><strong>20 May 2018 - 20 September 2018</strong></p>
+        <br>
+        <ul class="notAnimated animateBlock left responsibilities">
+          <li>Web Concepts: How the web works, Client-Server architecture, protocols</li>
+          <li>HTTP: fundamentals about the protocol: methods, status codes, headers, cookies and sessions</li>
+          <li>HTML and CSS: how to build a responsive User Interface with semantic HTML elements</li>
+          <li>JavaScript: how to use variables, primitive types, functions, hoisting, objects, scope, DOM, AJAX & Promises</li>
+          <li>OOP in JavaScript: prototypes, classes and inheritance in JavaScript</li>
+          <li>GIT: learned the principles and basic commands</li>
+          <li>jQuery: how to include it in a project and how to use it, why it’s helpful, selectors</li>
+          <li>React JS: how modern JS applications work, React components, props, state, JSX</li>
+          <li>Team project: built the front-end part of an IMBD-like application (using a provided API), with the following functionalities: CRUD operations on movies, basic search, pagination, registration and login; we’ve used GitHub for code versioning and Asana for the project management part</li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-6 testing">
+        <h3 class="mt-4 mb-4 notAnimated animateBlock right">Work experience</h3>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <img class="resume-icons notAnimated animateBlock right" src="https://signup.myavenu.com/Images/avenu-logo.png" class="img-fluid" width="150px" alt="">
+          </div>
+          <div class="col-sm-12 col-md-6 m-3">
+            <h4 class="notAnimated animateBlock right">Software QA Tester</h4>
+          </div>
+        </div>
+        <br>
+        <p class="notAnimated animateBlock right"><strong>30 July 2018 - Present</strong></p>
+        <br>
+        <ul class="notAnimated animateBlock right responsibilities">Responsibilities:
+          <li>Analyzing technical documentation and specifications</li>
+          <li>Create test cases and test plans</li>
+          <li>Perform manual testing and utilize the adequate testing tools</li>
+          <li>Verify applications to be in conformity with specifications</li>
+          <li>Write technical/user documentation</li>
+          <li>Making also of sets of additional tests, if necessary according to the relevant documentation</li>
+        </ul>
+        <div>
+          <ul class="notAnimated animateBlock right responsibilities">Tool used:
+            <li>Bug reporting and bug tracking in Jira</li>
+            <li>Selenium for automation testing</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="notAnimated animateBlock right responsibilities">Working with the following languages:
+            <li>Web (Javascript, Angular JS)</li>
+            <li>iOS development (Swift)</li>
+            <li>Database (MSSQL)</li>
+          </ul>
+        </div>
+        <h3 class="mt-4 mb-4 notAnimated animateBlock right">Work experience</h3>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <img class="resume-icons notAnimated animateBlock right" src="https://upload.wikimedia.org/wikipedia/en/4/42/Gameloft.png" class="img-fluid" width="150px" alt="">
+          </div>
+          <div class="col-sm-12 col-md-6 m-3">
+            <h4 class="notAnimated animateBlock right">QA Tester</h4>
+          </div>
+        </div>
+        <br>
+        <p class="notAnimated animateBlock right"><strong>1 December 2016 - 30 July 2018</strong></p>
+        <br>
+        <p class="notAnimated animateBlock right">As a QA Analyst my main responsibility was making sure that me and the team that I worked with deliver high quality products with no bugs that can give our costumers the best gaming experience possible!</p>
+        <ul class="notAnimated animateBlock right responsibilities">
+          <li>Designing, maintaining and executing test plans and test cases</li>
+          <li>Investigating and replicating reported defects</li>
+          <li>Performing various kinds of testing: performance testing, functional testing, unit testing, UI testing, integration testing, security testing, compatibility testing, regression testing, etc.</li>
+          <li>Reviewing product requirements and functional specifications documents to do an impact analysis, estimate QA effort, plan the required test plans.</li>
+          <li>Maintain the defect log under control at all times</li>
+          <li>Assisting in the implementation of QA standards and continual QA improvement activities</li>
+          <li>Reporting back to the line Manager</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="background3" class="container-fluid text-center"></div>
+
+  <div id="portfolio-container" class="container-fluid text-center">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 id="portfolio-title" class="mb-4">MY LATEST WORKS</h2>
+      </div>
+    </div>
+    <div id="portfolio-item" class="row">
+      <!-- Content generated by jQuery -->
+    </div>
+  </div>
+
+  <!-- Container (Contact Section) -->
+  <footer id="background4" class="container-fluid">
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center notAnimated animateBlock left">
+            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <hr class="my-4">
+            <p class="mb-2">Ready to start your next project with me? That's great! Give me a call or send me an email and I will get back to you as soon as possible!</p>
+          </div>
+        </div>
+        <div class="row contact-links">
+          <div class="col-lg-4 ml-auto text-center notAnimated animateBlock left">
+            <i class="fa fa-linkedin fa-3x mb-3 sr-contact" data-sr-id="8"></i>
+            <p>
+              <a href="https://www.linkedin.com/in/csaszar-robert-daniel-12a37a144/" target="_blank">Robert Daniel Csaszar</a>
+            </p>
+          </div>
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-skype fa-3x mb-3 sr-contact" data-sr-id="8"></i>
+            <p>
+              <a href="skype:robert.daniel.c92@gmail.com?add" target="_blank">CALL ME</a>
+            </p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center notAnimated animateBlock right">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact" data-sr-id="9"></i>
+            <p>
+              <a href="mailto:robertdaniel.csaszar@yahoo.com">robertdaniel.csaszar@yahoo.com</a>
+            </p>
+          </div>
+          <div class="col-sm-12 text-center notAnimated animateBlock right">
+            <p id="copyright" class="mt-5">© 2018 ROBERT DANIEL CSASZAR ALL RIGHTS RESERVED</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <!-- Back to top button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-caret-square-o-up"></i></button>
+
+
+</body>
+
+</html>

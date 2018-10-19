@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Curs 26 - Storage</title>
+  <!-- Bootstrap v4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</head>
+
+
+<body>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center align-center">
+      <div class="col-md-6">
+        <div id="weather">
+          <div class="text-center mb-3">
+            <h1>Weather</h1>
+            <div class="form-check-inline m-2">
+              <label class="form-check-label">
+                <input id="celsius" type="radio" class="form-check-input" name="temp" value="c">Celsius
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input id="fahrenheit" type="radio" class="form-check-input" name="temp" value="f">Fahrenheit
+              </label>
+            </div>
+            <div class="form-inline justify-content-center">
+              <input id="searchCity" type="text" class="form-control" placeholder="Search City">
+              <button id="searchBtn" type="submit" class="ml-2 btn btn-info">Search</button>
+            </div>
+          </div>
+
+          <div class="container">
+            <div id="currentTime" class="row">
+              <div class="col-md-12 text-center">
+                <span id="date"></span>
+              </div>
+            </div>
+          </div>
+          <div class="container mt-3">
+            <div id="week" class="row justify-content-center">
+              <div class="col-md-6 days text-center">
+                <div>
+                  <span id="city"></span>
+                </div>
+                <hr>
+                <div class="day">
+                  <span>Today</span>
+                </div>
+                <hr>
+                <div>
+                  <span id="temp"></span>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

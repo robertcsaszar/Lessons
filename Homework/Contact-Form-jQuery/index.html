@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form jQuery</title>
+</head>
+  <!-- Bootstrap v4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!--  Bootstrap v4 scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <!-- Custom Script -->
+  <script src="assets/js/script.js"></script>
+<body>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <center><h1>Contact Form</h1></center>
+      </div>
+    </div>
+    
+    <div id="successContainer" class="row">
+      <div class="col-md-12">
+        <div id="successItem" class="alert alert-success alert-dismissible">
+          <a  href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      
+      <div class="col-sm-12">
+        <form id="contact" action="#"  name="contact" onsubmit="validData()">
+          <div class="row">
+            <div class="col-md-6">
+              <input id="firstName" class="form-control" type="text" name="fname" placeholder="First Name"/>
+              <br>
+              <input id="lastName" class="form-control" type="text" name="lname" placeholder="Last Name"/>
+              <br>
+              <p>Gender</p>
+              <ul id="gender">
+                <li>
+                  <input type="radio" name="gender" value="male">M</input>
+                </li>
+                <li>
+                  <input type="radio" name="gender" value="female">F</input>
+                </li>
+              </ul>
+              <textarea id="message" class="form-control" rows="8" placeholder="Your message here..."></textarea>
+              <br>
+              <div class="row">
+                <div class="col-md-12">
+                  <button id="submit" class="btn btn-primary float-right" type=submit onclick="requiredData()">Submit</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img src="https://www.croonwolterendros.nl/profiles/tbi_bd_base/themes/tbibase/img/default-placeholder.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  
+</body>
+</html>

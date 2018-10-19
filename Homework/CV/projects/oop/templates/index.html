@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>OOP - Games</title>
+  <!-- Bootstrap v4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="../models/games.js"></script>
+  <script src="../models/game.js"></script>
+  <script src="../views/games.js"></script>
+</head>
+
+<body>
+  <!-- Games main container where all the games are displayer -->
+  <!-- Only the title and the image will be displayer -->
+  <div class="container mainGames">
+    <h1 id="title">OOP - Games</h1>
+    
+    <!-- Add a new game Button -->
+    <div id="addContainer">
+      <button id="addGame" class="btn btn-primary">Add Game</button>
+    </div>
+    
+    <div id="games-list" class="row">
+      <!-- Content will be generated from View file -->
+    </div>
+  </div>
+  
+  <!-- Add a new game confirmation -->
+  <div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h4 class="confirmation mt-3"></h4>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

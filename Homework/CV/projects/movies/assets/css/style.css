@@ -1,0 +1,436 @@
+/* ---------------------------------------------------
+    GENERAL STYLE
+----------------------------------------------------- */
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  max-height: 100%;
+  width: auto;
+  overflow-y: auto;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  transition: all 0.3s;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------
+    SCROLLBAR STYLE
+----------------------------------------------------- */
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ---------------------------------------------------
+    NAVBAR STYLE
+----------------------------------------------------- */
+
+#navigation {
+  background: #1f1f1f;
+  color: #fff;
+}
+
+/* ---------------------------------------------------
+    LOG IN / LOG OUT & REGISTER BUTTONS
+----------------------------------------------------- */
+
+.login {
+  display: visible;
+}
+
+.logout {
+  display: none;
+}
+
+/* ---------------------------------------------------
+    USER PANEL STYLE
+----------------------------------------------------- */
+
+.userPanel {
+/*   display: none; */
+  border-bottom: 1px solid #454545;
+}
+
+.userPanel img {
+  display: none;
+}
+
+#avatar {
+  border: 3px solid black;
+  border-radius: 100%;
+  background: white;
+  width: 150px;
+}
+
+/* ---------------------------------------------------
+    ADMIN PANEL STYLE
+----------------------------------------------------- */
+
+.admPanel {
+  border-bottom: 1px solid #454545;
+  display: none;
+}
+
+/* ---------------------------------------------------
+    MENU & LOGO BORDERS
+----------------------------------------------------- */
+
+#menu,
+#logo {
+  border-bottom: 1px solid #454545;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+#sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: #1f1f1f;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+nav {
+  overflow-y: auto;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #1f1f1f;
+}
+
+#sidebar ul.components, #navigation ul.components {
+  padding: 20px 0;
+}
+
+#sidebar ul p, #navigation ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a, #navigation ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a:hover, #navigation ul li a:hover {
+  color: black;
+  background: #fff;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em;
+  padding-left: 30px;
+  background: #272727;
+}
+
+#menu ul ul a {
+  font-size: 0.9em;
+  padding-left: 30px;
+  background: #1f1f1f;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+  width: calc(100% - 250px);
+  padding: 40px;
+  min-height: 100%;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#content.active {
+  width: 100%;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 771px) {
+  #sidebar {
+    margin-left: -250px;
+    display: none;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+  }
+/*   #content.active {
+    width: calc(100% - 250px);
+  } */
+  #sidebarCollapse span {
+    display: none;
+  }
+  #sidebarCollapse {
+    display: none;
+  }
+  
+  #homeSearch {
+    display: none;
+  }
+}
+
+@media (min-width: 771px) {
+  #navigation {
+    display: none
+  }
+}
+
+/* iPhone 5/SE landscape or any other phone with max width 568px lanscape */
+@media (min-width: 568px) and (max-width: 569px) and (orientation: landscape) {
+  .searchBar {
+    width: 80%;
+    margin-right: 5px;
+  }
+}
+
+/* iPhone 6+/7+/8+ or any other phone with max width 375px */
+@media (min-width: 376px) and (max-width: 414px) {
+  .searchBar {
+    width: 80%;
+    margin-right: 5px;
+  }
+}
+
+/* iPhone 6/7/8/X or any other phone with max width 375px */
+@media (min-width: 321px) and (max-width: 375px) {
+  .searchBar {
+    width: 75%;
+    margin-right: 5px;
+  } 
+}
+
+/* iPhone 5/SE or any other phone with max width 320px */
+@media (max-width: 320px) {
+  .searchBar {
+    width: 69%;
+    margin-right: 5px;
+  }
+}
+
+/* ---------------------------------------------------
+    LOGIN FORM
+----------------------------------------------------- */
+
+/* .container-login-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.wrap-login-form {
+  background: #000000;
+  position: relative;
+  bottom: 20px;
+  top: -5px;
+  width: 465px;
+  height: 600px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.login-form-image {
+  background-size: cover;
+  background-position: center;
+  padding: 216px 11px 56px 12px;
+}
+
+label {
+  padding-top: 14px;
+  display: inline-block;
+  margin-bottom: .5rem;
+  color: black;
+}
+
+.input-user-pass {
+  font-size: 15px;
+  height: 35px;
+  color: black;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.rememberMe-label {
+  margin-bottom: 0px;
+  padding-left: 18px;
+  position: relative;
+  top: -27px;
+}
+
+.rememberMe-checkbox {
+  position: relative;
+  top: 18px;
+  left: -18px;
+  margin-top: .3rem;
+  display: block;
+  padding-left: 22px;
+  color: #808080;
+  cursor: pointer;
+}
+
+.rememberMe-label:hover {
+  color: #d1edf5;
+}
+
+.forgot-pass {
+  font-size: 15px;
+  color: white;
+  position: relative;
+  left: 250px;
+  bottom: 40px;
+  top: -68px;
+}
+
+.forgot-pass:hover {
+  color: #d1edf5;
+}
+
+.btn-login {
+  position: relative;
+  bottom: 58px;
+  min-width: 114px;
+  height: 46px;
+  background-color: #b30000;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #fff;
+  margin-left: 170px;
+} */
+
+/* ---------------------------------------------------
+    REGISTER FORM
+----------------------------------------------------- */
+
+/* .container-register {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: white;
+}
+
+.wrap-register-form {
+  background: #410d24;
+  position: relative;
+  top: 0px;
+  left: 360px;
+  width: 500px;
+  height: 808px;
+  bottom: 60px;
+  padding: 10px;
+  margin-top: 27px;
+  border-radius: 20px;
+}
+
+.register-form-image {
+  background-size: cover;
+  background-position: center;
+  padding: 247px 11px 56px 12px;
+}
+
+.input-register {
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  color: black;
+  }
+
+.btn-register {
+  position: relative;
+  bottom: -35px;
+  min-width: 114px;
+  height: 46px;
+  background-color: #165baa;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #fff;
+  margin-left: 170px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+

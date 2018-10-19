@@ -1,0 +1,186 @@
+/* ###### MEDIA FOR SMALLER SCREENS ###### */
+/* ####################################### */
+
+/* Background Height on smaller screens */
+
+@media (max-width: 667px) {
+  #top-container,
+  #background2,
+  #background4 {
+    height: auto;
+  }
+  .section-heading {
+    margin-top: 10px;
+  }
+  #skills-container,
+  .contact-links {
+    margin-top: 0;
+  }
+  #logo {
+    margin-top: 10%;
+  }
+  #fname {
+    margin-top: 5%;
+  }
+  #lname {
+    margin-top: 1%;
+  }
+  #me {
+    width: 50%;
+    margin-top: 8%;
+  }
+  #top-container {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1024px) {
+  #background2,
+  #background4 {
+    height: auto;
+  }
+  #logo {
+    margin-top: 10%;
+  }
+  #fname {
+    margin-top: 5%;
+  }
+  #lname {
+    margin-top: 1%;
+  }
+  #me {
+    width: 40%;
+    margin-top: 8%;
+  }
+}
+
+/* Navbar collapse at 991px - black text with white hover and white lightseagreen */
+
+@media (max-width: 991px) {
+  header div:first-child>div:first-child>nav>div {
+    background-color: white;
+    border-radius: 0 8px 8px 8px;
+  }
+  .nav-link.active {
+    background-color: lightseagreen;
+  }
+  #navbarText>ul.navbar-nav.mr-auto>li>a.active {
+    background-color: lightseagreen;
+    color: white;
+  }
+  header div:first-child>div:first-child>nav {
+    width: 35%;
+    position: fixed;
+    z-index: 1;
+  }
+  header div:first-child>div:first-child>nav>div>ul:first-child>li:first-child>a:first-child {
+    margin-top: 10px;
+  }
+  header div:first-child>div:first-child>nav>div>ul:first-child>li:last-child>a:first-child {
+    margin-bottom: 10px;
+  }
+  header div:first-child>div:first-child>nav>div>ul:first-child>li>a {
+    color: black;
+    text-align: center;
+  }
+  header div:first-child>div:first-child>nav>div>ul:first-child>li>a:hover {
+    color: white;
+    background-color: lightseagreen;
+  }
+  header div:first-child>div:first-child>nav>div>ul:nth-child(3)>li>a {
+    display: none;
+  }
+  .navbar-text {
+    display: none;
+  }
+  hr {
+    background-color: black;
+  }
+  .fixed-top.scrolled {
+    background-color: transparent;
+  }
+  header div:first-child>div:first-child>nav>button {
+    margin: 35px 0 0 0;
+  }
+  .social {
+    display: none;
+  }
+}
+
+/* ######## Skills ######## */
+/* ####################### */
+
+@media (max-width: 360px) {
+  .skills_wrapper .skills-item {
+    left: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .skills_wrapper .skills-item {
+    left: -5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills_wrapper .skills-item .inner_wrap .chartCanvas {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .skills_wrapper {
+    margin: 0 -30px 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills_wrapper {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .skills_wrapper .skills-item {
+    width: 570px;
+    margin: 0 30px 22px 0
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .skills_wrapper .skills-item {
+    width: 228px;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills_wrapper .skills-item {
+    width: 420px;
+    float: none;
+    margin: 0 0 15px 0
+  }
+}
+
+@media (max-width: 480px) {
+  .skills_wrapper .skills-item {
+    width: 270px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .skills_wrapper .skills-item .inner_wrap {
+    padding-right: 62px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .skills_wrapper .skills-item .inner_wrap .level {
+    right: -10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills_wrapper .skills-item .inner_wrap .diagram {
+    max-width: 476px;
+  }
+}

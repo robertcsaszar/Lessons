@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+
+  <h1>AJAX Homework</h1>
+  
+  <!-- Quotes API -->
+  <h3>Quotes</h3>
+  <button id="get-quote">Get Quote</button>
+  <div id="quoteContainer"></div>
+
+  <h3>Display more Quotes</h3>
+  <input type="text" name="quote" placeholder="Number of Quotes"><button id="get-quotes">Get Quotes</button>
+  <div id="quotesContainer"></div>
+  <hr>
+  
+  <!-- CRUD POST API -->
+  <h3>Create Post</h3>
+  <input type="text" name="createPost" placeholder="Title">
+  <br>
+  <br>
+  <textarea name="createTextarea" rows="4" cols="50" placeholder="Body text..."></textarea>
+  <br>
+  <button id="createPost">Submit</button>
+  <div id="createContainer"></div>
+
+  <h3>Get all posts</h3>
+  <button id="get-titles">Get Posts</button>
+  <div id="displayAllContainer"></div>
+
+  <h3>Get post</h3>
+  <input type="text" name="titles" placeholder="Type post id..."><button id="get-title">Get Post</button>
+  <div id="displayContainer"></div>
+
+  <h3>Update Post</h3>
+  <input type="text" name="titleID" placeholder="ID">
+  <input type="text" name="updateTitle" placeholder="Title">
+  <br>
+  <br>
+  <textarea name="textarea" rows="4" cols="50" placeholder="Body text..."></textarea>
+  <br>
+  <button id="updatePost">Update Post</button>
+  <div id="updateContainer"></div>
+
+  <h3>Delete Post</h3>
+  <input type="text" name="deletePost" placeholder="Type post id..."><button id="deletePost">Delete Post</button>
+  <div id="deleteContainer"></div>
+
+</body>
+
+</html>
